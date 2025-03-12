@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela da Dor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabela da Dor💀</h1>
+        <div class="checkbox-group-mobile">
+            <label>
+                <input type="checkbox" class="tabela-dor" name="tabela" onchange="alternarCheckbox(this)" checked>
+                Normal
+            </label>
+            <label>
+                <input type="checkbox" class="tabela-dor-maior" name="tabela" onchange="alternarCheckbox(this)">
+                Maior
+            </label>
+        </div>
+        <div class="chat" id="chat"></div>
+        <div class="selecao-container">
+            <select id="selecao-tabela">
+                <option value="bludgeoning">Bludgeoning</option>
+                <option value="piercing">Piercing</option>
+                <option value="slashing">Slashing</option>
+            </select>
+            <div class="checkbox-group-desk">
+                <label>
+                    <input type="checkbox" class="tabela-dor" name="tabela" onchange="alternarCheckbox(this)" checked>
+                    Normal
+                </label>
+                <label>
+                    <input type="checkbox" class="tabela-dor-maior" name="tabela" onchange="alternarCheckbox(this)">
+                    Maior
+                </label>
+            </div>
+            <button class="botao-dado" onclick="gerarResultado()">
+                <i class="fas fa-dice"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
